@@ -62,4 +62,5 @@ We provide a specific subset of the data that reflects the diversity of the orig
 
 ## Accessibility & Usage
 
-Due to file size limitations, the datasets are hosted on Hugging Face. You can access them here:   🤗**[Hugging Face Dataset: kdd2026-cloudcons/CloudCons-ds](https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds)**
+Due to file size limitations, the datasets are hosted on Hugging Face. You can access them here:   🤗[Hugging Face Dataset: kdd2026-cloudcons/CloudCons-ds](https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds)
+
