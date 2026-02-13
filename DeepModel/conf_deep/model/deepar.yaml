@@ -1,0 +1,15 @@
+name: "deepar"
+estimator:
+  _target_: DeepModel.DeepModel.deepar.estimator.DeepAREstimator
+  batch_size: 128
+optuna:
+  hidden_size:
+    - categorical
+    - [20,25,30,35,40,45,50,55,60,65,70,75,80]
+  num_layers:
+    - categorical
+    - [1,2,3,4]
+  lr:
+    - float
+    - [1e-5, 1e-1]
+    - log: True

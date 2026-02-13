@@ -1,0 +1,18 @@
+name: "patch_tst"
+estimator:
+  _target_: DeepModel.DeepModel.patch_tst.estimator.PatchTSTEstimator
+  batch_size: 64
+optuna:
+  d_model:
+    - categorical
+    - [128, 256, 512]
+  num_encoder_layers:
+    - categorical
+    - [2, 3, 4]
+  patch_len:
+    - categorical
+    - [8,16]
+  lr:
+    - float
+    - [1e-5, 1e-2]
+    - log: True

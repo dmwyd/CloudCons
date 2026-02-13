@@ -1,0 +1,34 @@
+hydra:
+  run:
+    dir: deepmodel_outputs/${hydra:runtime.choices.model}/${dataset.granularity}/${dataset.dataset_name}/prediction_length=${dataset.prediction_length}
+defaults:
+  - model: ...
+  - _self_
+dataset:
+  _target_: forecasting_bench.data.Dataset
+  dataset_name: ...
+  prediction_length: ...
+  to_univariate: ...
+  granularity: ...
+n_trials: 15
+max_trials: 15
+metrics:
+  - _target_: gluonts.ev.metrics.MSE
+    forecast_type: mean
+  - _target_: gluonts.ev.metrics.MSE
+    forecast_type: 0.5
+  - _target_: gluonts.ev.metrics.MAE
+  - _target_: gluonts.ev.metrics.MASE
+  - _target_: gluonts.ev.metrics.MAPE
+  - _target_: gluonts.ev.metrics.SMAPE
+  - _target_: gluonts.ev.metrics.MSIS
+  - _target_: gluonts.ev.metrics.RMSE
+  - _target_: gluonts.ev.metrics.NRMSE
+  - _target_: gluonts.ev.metrics.ND
+  - _target_: gluonts.ev.metrics.MeanWeightedSumQuantileLoss
+    quantile_levels: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+context_length: ...
+eval_batch_size: 256
+num_eval_repeats: 1
+test: false              ##############
+infer: false

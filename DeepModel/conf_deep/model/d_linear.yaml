@@ -1,0 +1,13 @@
+name: "d_linear"
+estimator:
+  _target_: DeepModel.DeepModel.d_linear.estimator.DLinearEstimator
+  batch_size: 64                      
+  lr: 1e-4
+optuna:
+  # lr:
+  #   - float
+  #   - [1e-5, 1e-4]
+  #   - log: True
+  kernel_size:
+    - categorical
+    - [7,13,25]
