@@ -25,7 +25,7 @@ By introducing an end-to-end evaluation suite, we enable researchers to optimize
 
 ### 3. Actionable Insights for Industry
 
-We provide a rigorous analysis of **Predictive Quantile Selection**, offering a strategic lever to balance the trade-off between resource efficiency and service reliability. Our findings guide practitioners on when to use median forecasts (cost-oriented) versus high-quantile forecasts (reliability-oriented) .
+We provide a rigorous analysis of predictive quantile selection, offering a strategic lever to balance the trade-off between resource efficiency and service reliability. Our findings guide practitioners on when to use median forecasts (cost-oriented) versus high-quantile forecasts (reliability-oriented) .
 
 
 
@@ -42,7 +42,7 @@ We are committed to open science and ensuring that our benchmark is easily acces
 
 - **`forecasting_bench/`**: **Time Series Forecasting Evaluation**
 
-  - It includes scripts to generate standard rolling-window predictions and compute error-based metrics, such as **MASE** and **CRPS**, to benchmark forecasting accuracy .
+  - It includes scripts to generate standard rolling-window predictions and compute error-based metrics, such as MASE and CRPS, to benchmark forecasting accuracy .
 
 - **`predictor/`**: **Statistical & Foundation Models**
 
@@ -56,7 +56,7 @@ We are committed to open science and ensuring that our benchmark is easily acces
 
   - This is the core engine for the "Forecast-then-Optimize" workflow, built on the **SimPy** discrete-event simulation framework.
   - **Environment:** Simulates cloud data center operations, including VM allocation and resource usage tracking.
-  - **Optimization Algorithms (Scheduler):** Implements various packing strategies, ranging from heuristic algorithms (**FFD**, **BFD**) and meta-heuristics (**ACO**) to the exact solver (**Gurobi**).
+  - **Optimization Algorithms (Scheduler):** Implements various packing strategies, ranging from heuristic algorithms (FFD, BFD) and meta-heuristics (ACO) to the exact solver (Gurobi).
   - **Evaluation Metrics:** Calculates downstream decision utility metrics, including Util, RAR, VR, VS, PICP, MPIW, Winker Score.
 
   
@@ -67,7 +67,7 @@ We strictly adhere to ethical guidelines regarding data privacy, bias mitigation
 
 ### 1. Data Provenance and Privacy 
 
-- **Source:** The datasets included in CloudCons are derived from publicly released traces by **Huawei Cloud**, **Microsoft Azure**, and **Google Borg**.
+- **Source:** The datasets included in CloudCons are derived from publicly released traces by Huawei Cloud, Microsoft Azure, and Google Borg.
 - **Anonymization:** These datasets contain strictly technical metric logs (e.g., CPU usage, memory usage) . No Personally Identifiable Information (PII) or sensitive user content is involved.
 
 ### 2. Bias Mitigation
@@ -77,4 +77,3 @@ Real-world workloads can be highly skewed. By curating multi-cloud datasets that
 ### 3. Environmental Responsibility
 
 The core objective of CloudCons is to improve resource Consolidation. While the direct measure is reducing the number of active physical servers, the ultimate goal is to enhance resource utilization efficiency, thereby minimizing energy consumption.
-
