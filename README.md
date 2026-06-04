@@ -47,3 +47,15 @@ All processed datasets (Huawei2025, Azure2019, Borg2019-d, Borg2019-e) are hoste
 
 - **Source:** The datasets included in CloudCons are derived from publicly released traces by Huawei Cloud (via `sir-lab`), Microsoft Azure (Azure Public Dataset V2), and Google Borg (ClusterData 2019). As a curated benchmark, CloudCons represents a derivative work and is distributed in compliance with the original data owners' open-source license (CC BY 4.0).
 - **Anonymization:** These datasets contain strictly technical metric logs (e.g., CPU usage, memory usage) . No Personally Identifiable Information (PII) or sensitive user content is involved.
+
+
+## Citation
+```bibtex
+@inproceedings{
+zhang2026cloudcons,
+title={CloudCons: A Comprehensive End-to-End Benchmark for Cloud Resource Consolidation},
+author={Xiaobin Zhang and Lefei Shen and Mouxiang Chen and Zhuo Li and Hongkai Li and Han Fu and Jianling Sun and Xiaoxue Ren and Chenghao Liu},
+booktitle={KDD 2026 Datasets and Benchmarks Track (Cycle 2)},
+year={2026},
+}
+```
