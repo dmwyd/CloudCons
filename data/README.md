@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **[CloudCons](https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds)** datasets comprise heterogeneous workload traces collected from real-world cloud production environments. Unlike traditional time series benchmarks that focus solely on forecasting accuracy, the datasets are designed for an **End-to-End Evaluation** framework.
+The **[CloudCons datasets](https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds)** comprise heterogeneous workload traces collected from real-world cloud production environments. Unlike traditional time series benchmarks that focus solely on forecasting accuracy, the datasets are designed for an **End-to-End Evaluation** framework.
 
 **Core Tasks:**
 
