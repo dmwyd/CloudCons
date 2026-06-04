@@ -29,51 +29,21 @@ We provide a rigorous analysis of predictive quantile selection, offering a stra
 
 
 
-## 🚀 Accessibility 
+## 🚀 How to use? 
 
-We are committed to open science and ensuring that our benchmark is easily accessible to the research community without barriers.
+### 1. Data Access
 
-### 1. Open Data Access
+All processed datasets (Huawei2025, Azure2019, Borg2019-d, Borg2019-e) are hosted on Hugging Face. You can access and download them directly via the following link: [https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds](https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds). 
 
-- **No Authentication Required:** All processed datasets (Huawei2025, Azure2019, Borg2019-d, Borg2019-e) are hosted on Hugging Face. You can access and download them directly via the following link: [https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds](https://huggingface.co/datasets/kdd2026-cloudcons/CloudCons-ds). 
-- **Standardized Format:** The datasets have been processed through a standardized pipeline and are provided in universal formats to ensure compatibility with standard data science tools.
-
-### 2. Open Source Code
+### 2. Source Code
 
 - **`forecasting_bench/`**: **Time Series Forecasting Evaluation**
-
-  - It includes scripts to generate standard rolling-window predictions and compute error-based metrics, such as MASE and CRPS, to benchmark forecasting accuracy .
-
 - **`predictor/`**: **Statistical & Foundation Models**
-
-  - This directory contains the inference wrappers for models that do not require dataset-specific training.
-
 - **`DeepModel/`**: **Deep Learning Model Training & Evaluation**
-
-  - This folder manages the full lifecycle (training, hyperparameter tuning, evaluation) of deep learning baselines.
-
 - **`simulation/`**: **End-to-End Simulation & Optimization**
-
-  - This is the core engine for the "Forecast-then-Optimize" workflow, built on the **SimPy** discrete-event simulation framework.
-  - **Environment:** Simulates cloud data center operations, including VM allocation and resource usage tracking.
-  - **Optimization Algorithms (Scheduler):** Implements various packing strategies, ranging from heuristic algorithms (FFD, BFD) and meta-heuristics (ACO) to the exact solver (Gurobi).
-  - **Evaluation Metrics:** Calculates downstream decision utility metrics, including Util, RAR, VR, VS, PICP, MPIW, Winker Score.
-
   
 
-## ⚖️ Ethics and Fairness
-
-We strictly adhere to ethical guidelines regarding data privacy, bias mitigation, and responsible AI development.
-
-### 1. Data Provenance and Privacy 
+## ⚖️ Data Provenance and Privacy 
 
 - **Source:** The datasets included in CloudCons are derived from publicly released traces by Huawei Cloud, Microsoft Azure, and Google Borg.
 - **Anonymization:** These datasets contain strictly technical metric logs (e.g., CPU usage, memory usage) . No Personally Identifiable Information (PII) or sensitive user content is involved.
-
-### 2. Bias Mitigation
-
-Real-world workloads can be highly skewed. By curating multi-cloud datasets that cover varying behaviors, we mitigate the risk of overfitting to specific provider architectures or workload types.
-
-### 3. Environmental Responsibility
-
-The core objective of CloudCons is to improve resource Consolidation. While the direct measure is reducing the number of active physical servers, the ultimate goal is to enhance resource utilization efficiency, thereby minimizing energy consumption.
