@@ -1,4 +1,4 @@
-# CloudCons: A Comprehensive End-to-End Benchmark for Cloud Resource Consolidation
+# Cloud Consolidation-Cloudcons
 
 ## 📖 Overview
 
