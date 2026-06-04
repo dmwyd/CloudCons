@@ -52,13 +52,6 @@ Data are organized into two categories: datasets for general time series forecas
 | **Borg2019-d** | 127   | $\ge$ 14 days | `cpu_usage` (normalized), `start_time`,`frequency` |
 | **Borg2019-e** | 68    | $\ge$ 14 days | `cpu_usage` (normalized), `start_time`,`frequency` |
 
-## Curation & Preprocessing
-
-The detailed data processing pipeline—including cleaning, imputation, aggregation, and feature extraction—is described in the paper.
-
-**Balanced Sampling (BLAST):** To facilitate easier access and improve evaluation efficiency, we employed the "BLAST" balanced sampling method. This approach is based on the KDD '25 paper: *["BLAST: Balanced Sampling Time Series Corpus for Universal Forecasting Models"](https://dl.acm.org/doi/10.1145/3711896.3736860)*.
-
-We provide a specific subset of the data that reflects the diversity of the original datasets. Researchers aiming to evaluate **forecasting tasks** can utilize this subset to enhance efficiency.
 
 ## Accessibility & Usage
 
